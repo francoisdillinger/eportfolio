@@ -77,6 +77,7 @@ div.row{
     margin: 150px 0;
 }
 .our-team{
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
     padding: 30px 0 40px;
@@ -273,7 +274,8 @@ div .header{
 }
 .paragraph{
     padding: 1em;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4em;
     background-color: #fafafa;
     color: #212121;
 }
