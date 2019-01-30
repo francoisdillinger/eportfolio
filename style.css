@@ -54,7 +54,7 @@ a.btn-small:hover{
 }
 div.about-me .row{
     background-size: 100%;
-    background-image: url("images/unsplash.jpg");
+    /* background-image: url("images/unsplash.jpg"); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -237,26 +237,29 @@ div.row{
     transition: all .5s ease 0s;
 }
 div.container{
-    background-color: #212121;
+    /* background-color: #212121; */
 }
-div.container span.title{
-    color: #fafafa
+div.container div.title{
+    color: #212121;
 }
 .sections{
     margin: 20px 0;
-    background-color: #005a76;
+    background-color: #212121;
 }
 div.col.s10.m10.push-s1.push-m1.sections{
     padding: 0;
-    /* -webkit-box-shadow: 0px 0px 30px 6px rgba(255,255,255,1); */
+    /* -webkit-box-shadow: 0px 0px 30px 6px rgba(0,0,0,1); */
      border: white 2px solid;
 }
 i.fas.fa-5x{
-    padding: .2em
+    /* padding: .2em */
 }
+ /* .fa-user-circle .fa-5x {
+    font-size: 1em;
+} */
 .icon{
     text-align: center;
-    background-color:#212121;
+    /* background-color:#212121; */
 }
 i.fas:before {
     color: #005a76;
@@ -268,9 +271,18 @@ div .header{
     color: #00263e;
     font-family: 'Megrim', cursive;
 }
+.row.hobbies{
+    /* padding: 1em; */
+}
+/* div.col.cards{
+    width: 30%;
+} */
 .content{
   text-align: center;
   /* -webkit-box-shadow: 0px 0px 0px 0px rgba(255,255,255,1); */
+}
+div.icon, div p{
+    padding: 1em;
 }
 .paragraph{
     padding: 1em;
