@@ -46,7 +46,7 @@ a.btn-small:hover{
     margin-top: 1em;
     width: 100%;
     background-size: 100%;
-    background-image: url("images/unsplash.jpg");
+    background-image: url("images/80.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -194,6 +194,9 @@ div.row{
     font-size: 15px;
     text-transform: capitalize;
 }
+span.post{
+    padding: 1em;
+}
 .our-team:hover .title,
 .our-team:hover .post{
     color: #00263e;
@@ -242,6 +245,9 @@ div.container{
 div.container div.title{
     color: #212121;
 }
+hr{
+    width: 75%;
+}
 .sections{
     margin: 20px 0;
     background-color: #212121;
@@ -259,7 +265,7 @@ i.fas.fa-5x{
 } */
 .icon{
     text-align: center;
-    /* background-color:#212121; */
+    background-color:#212121;
 }
 i.fas:before {
     color: #005a76;
@@ -267,9 +273,12 @@ i.fas:before {
 div .header{
     text-align: center;
     margin: .5em;
-    font-size: 5em;
+    /* font-size: 5em; */
     color: #00263e;
     font-family: 'Megrim', cursive;
+}
+div.header .title{
+    font-size: 5em;
 }
 .row.hobbies{
     /* padding: 1em; */
@@ -278,7 +287,8 @@ div .header{
     width: 30%;
 } */
 .content{
-  text-align: center;
+  text-align: left;
+  font-size: 1.2em
   /* -webkit-box-shadow: 0px 0px 0px 0px rgba(255,255,255,1); */
 }
 div.icon, div p{
@@ -290,6 +300,22 @@ div.icon, div p{
     font-size: 1.4em;
     background-color: #fafafa;
     color: #212121;
+}
+i.fab:before {
+    color: #005a76;
+}
+div.portfolio {
+    text-align: center;
+}
+div.icons{
+    background-color: #fafafa;
+}
+div.icons span i{
+    margin: .2em;
+    /* margin-bottom:  .2em; */
+}
+footer div.header .title{
+    color: #f5f5f5
 }
 footer.page-footer{
     background-color: #212121;
