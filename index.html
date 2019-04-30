@@ -13,7 +13,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Megrim|Roboto+Condensed:300,400" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Megrim|Roboto+Condensed:300,400" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Megrim|Roboto+Mono:400" rel="stylesheet"> -->
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -21,13 +23,13 @@
         <![endif]-->
         <div class="navbar-fixed">
                 <header>
-                        <nav class="grey darken-4 z-depth-2">
+                        <nav id="nav" class="">
                             <div class="nav-wrapper transparent">
                                 <a href="#" class="brand-logo"><img id="me" src="images/me.jpg" alt=""></a>
                                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                                <li><a class=" " href="#one">About</a></li>
-                                <li><a class=" " href="#two">Portfolio</a></li>
-                                <li><a class=" " href="#three">Contact</a></li>
+                                <li><a id="link-one" class="" href="#one">About</a></li>
+                                <li><a id="link-two" class="" href="#two">Portfolio</a></li>
+                                <li><a id="link-three" class="" href="#three">Contact</a></li>
                                 </ul>
                             </div>
                             </nav>
@@ -44,10 +46,14 @@
                             <div class="team-content">
                                 <h3 class="title">James Jester</h3>
                                 <!-- <hr> -->
-                                <span class="post">Dreamer. Developer. Student. <br> Welcome to my own little patch of electronic real-estate! Scroll below to learn about my personal and professional interests and goals.</span>
+                                <span class="post">Dreamer. Developer. Student. <br> Welcome to my own little patch of electronic real-estate.</span>
                             </div>
                             <ul class="social">
                                 <li><a href="#three" class="btn">Contact</a></li>
+                                <!-- <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li> -->
                             </ul>
                         </div>
                         <div id="one"></div>
@@ -56,135 +62,257 @@
             </div>
         </div>
         <div  class="about-me">
-            <div class="container">
-                <div class="header">
-                        <div class="title">Who am I?</div>
-                        <hr>
-                </div>           
-            </div>
-            <div class="row">
-                <div class="col s12 m8 push-m2 cards">
-                    <div class="card z-depth-2">
-                        <div class="icon">
-                            <span class=""><i class="fas fa-user-circle fa-5x"></i></span>
+            <div id="content-one">
+                   
+                    <div class="">
+                            <div class="header">
+                                    <div id="triangle"></div>
+                                    <div class="title">Who am I?</div>
+                                    <div class="icon">
+                                            <span class=""><i class="fas fa-user-circle fa-5x"></i></span>
+                                        </div>
+                                    <hr>
+                            </div> 
+           
                         </div>
-                        <div class="content">
-                            <p>I’m currently a student at Jefferson State Community College, where I’m pursuing my Associates of Science in Computer Science. After that, I’ll be transferring to UAB for a B.S. in Computer Science. <br> 
-                                    My first introduction to programming was at the tender age of 32, in the form of a Front-End Coding Bootcamp at Covalence. I endured weeks of sleepless nights, engaged in countless fights with my browser console, and bought enough Mountain Dew to cause a momentary rise in PepsiCo share prices. At the end of those ten agonizing weeks, I came away with the conclusion that coding was nothing but an exercise in futility. Then, being the glutton for punishment that I am, I decided that pursuing a degree in Computer Science would be my next great adventure. <br>
-                                    Coding is hard. It’s often a test of will and patience, and with each error your code produces comes that voice in your head saying “Perhaps we should find a hobby that’s a bit…easier?” But all the struggle is worth it when that moment finally arrives where your code finally works as intended. Those are the moments that motivate me to continue in my journey as a programmer. <br>
-                                    At the moment, most of my coding interest lies in Web Development and App Development. However, once I’m finished with my formal education, I’d like to explore Quantum Computing, Machine Learning, or Artificial Intelligence.</p>
+                        <div class="row">
+                            <div class="col s12 m10 push-m1 ">
+                                <div class=" z-depth-2">
+                                 
+                                    <div class="content">
+                                        <p>I’m currently a student at Jefferson State Community College, where I’m pursuing my Associates of Science in Computer Science. After that, I’ll be transferring to UAB for a B.S. in Computer Science. <br> 
+                                                My first introduction to programming was at the tender age of 32, in the form of a Front-End Coding Bootcamp at Covalence. I endured weeks of sleepless nights, engaged in countless fights with my browser console, and bought enough Mountain Dew to cause a momentary rise in PepsiCo share prices. At the end of those ten agonizing weeks, I came away with the conclusion that coding was nothing but an exercise in futility. Then, being the glutton for punishment that I am, I decided that pursuing a degree in Computer Science would be my next great adventure. <br>
+                                                Coding is hard. It’s often a test of will and patience, and with each error your code produces comes that voice in your head saying “Perhaps we should find a hobby that’s a bit…easier?” But all the struggle is worth it when that moment finally arrives where your code finally works as intended. Those are the moments that motivate me to continue in my journey as a programmer. <br>
+                                                At the moment, most of my coding interest lies in Web Development and App Development. However, once I’m finished with my formal education, I’d like to explore Quantum Computing, Machine Learning, or Artificial Intelligence.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
             </div>
+            <div id="background-one"></div>
         </div>
-        <div class="row hobbies">
-                <div class="container">
+        <div id="content-two" class="row hobbies">
+                <div class="">
                         <div class="header">
-                            <div class="title">Hobbies</div>
-                            <hr>
-                        </div>
-                </div>
-                <div class="col s12 m4 cards">
-                   <div class="card z-depth-2">
-                        <div class="icon">
-                                <span class=""><i class="fas fa-hiking fa-5x"></i></span>
-                                <!-- <span class=" z-depth-2-title">Hiking</span> -->
-                                <!-- <hr> -->
-                        </div>       
-                        <div class="content">
-                        <p>In my free time, I enjoy being outdoors so hiking is one of my favorite activities. In fact, I enjoy hiking so much that in 2011 I backpacked the Appalachian Trail. A 2183-mile footpath from Georgia to Maine. It took me six months of sleeping under the stars, drinking from streams, and bathing once a week to make it to Maine. Not a day passes that I don’t think of those six months in the wilderness.</p>
+                                <div id="triangle"></div>
+                                <div class="title">Hobbies</div>
+                                <div class="icon">
+                                        <!-- <span class=""><i class="fas fa-hiking fa-5x"></i></span> -->
+                                    </div>
+                                <hr>
                         </div> 
+                </div>
+                <div class="col s12 m10 cards push-m1">
+                   <div class="card z-depth-2">
+                        <!-- <div class="icon">
+                        </div>        -->
+                        <div class="hobby">
+                            <div class="hobby-image col s12 m6">
+                                <img src="images/hiking.jpg" alt="">
+                                <div class="content z-depth-2">
+                                <p>I’ve recently taken up ice-skating. I’m not particularly good at it. In fact, when I’m on the ice it’s more like a perpetually controlled fall rather than actual skating. I somehow manage to remain on my two feet for the most part. I’m determined to become better at it so that I can join the Adult Hockey League. Perhaps, if my career brining about the singularity doesn’t play out, I can always the oldest player in the NHL.</p>
+                            </div>
+                            </div>
+                            <div class="content col s12 m6">
+                                <div class="z-depth-2">
+                                <p>In my free time, I enjoy being outdoors so hiking is one of my favorite activities. In fact, I enjoy hiking so much that in 2011 I backpacked the Appalachian Trail. A 2183-mile footpath from Georgia to Maine. It took me six months of sleeping under the stars, drinking from streams, and bathing once a week to make it to Maine. Not a day passes that I don’t think of those six months in the wilderness.</p>
+                                </div>
+                                <img src="images/skating.jpg" alt="">
+                            </div> 
+                        </div>
                    </div> 
                 </div>
-                    <div class="col s12 m4 cards">
-                       <div class="card z-depth-2">
-                            <div class="icon">
-                                    <span class=""><i class="fas fa-skating fa-5x"></i></span>
-                                    <!-- <span class="card-title">Hiking</span> -->
-                                    <!-- <hr> -->
-                            </div>       
-                            <div class="content">
-                            <p>I’ve recently taken up ice-skating. I’m not particularly good at it. In fact, when I’m on the ice it’s more like a perpetually controlled fall rather than actual skating. I somehow manage to remain on my two feet for the most part. I’m determined to become better at it so that I can join the Adult Hockey League. Perhaps, if my career brining about the singularity doesn’t play out, I can always the oldest player in the NHL.</p>
+                <div class="col s12 m10 cards push-m1">
+                   <div class="card z-depth-2">
+                        <div class="icon">
+                                <!-- <span class=""><i class="fas fa-bicycle fa-5x"></i></span> -->
+                                <!-- <span class="card-title">Hiking</span> -->
+                                <!-- <hr> -->
+                        </div>   
+                        <div class="hobby">
+                      
+                            <div class="hobby-image col s12 m6">
+                                <img src="images/biking.jpg" alt="">
                             </div>
-                       </div> 
+                            <div class="content col s12 m6 z-depth-2">
+                                    <p>If I’m not skating or hiking then I’m probably riding my bike, unless I’ve blown another tire. In February, I’ll be taking a bike-mechanics class so I can get to work replacing the worn parts on my Mountain Bike. Once the class is finished, I plan on volunteering at Redemptive Cycles, a non-profit in Birmingham, AL that repairs donated bikes and works with the local homeless population by letting them help around the shop in exchange for a bike to improve their mobility.</p>
+                            </div> 
+  
+                        </div>    
+
+                   </div>  
                     </div>
-                    <div class="col s12 m4 cards">
-                        <div class="card z-depth-2">
-                             <div class="icon">
-                                     <span class=""><i class="fas fa-bicycle fa-5x"></i></span>
-                                     <!-- <span class="card-title">Hiking</span> -->
-                                     <!-- <hr> -->
-                             </div>       
-                             <div class="content">
-                             <p>If I’m not skating or hiking then I’m probably riding my bike, unless I’ve blown another tire. In February, I’ll be taking a bike-mechanics class so I can get to work replacing the worn parts on my Mountain Bike. Once the class is finished, I plan on volunteering at Redemptive Cycles, a non-profit in Birmingham, AL that repairs donated bikes and works with the local homeless population by letting them help around the shop in exchange for a bike to improve their mobility.</p>
-                             </div> 
-                        </div>  
-                         </div>
+                    <!-- <div id="background-one"></div> -->
         </div>
         <div id="two"></div>
-        <div class="container">
+        <div class="">
                 <div class="header">
-                        <span class="title">Portfolio</span>
-                        <hr>
-                        <span class=""><i class="fas fa-laptop-code fa-5x"></i></span>
-                </div>
-                <div class="content portfolio">
-                    <p>
-                        Here are a few simple animations I've made. I've included icons showing what was used to create them. The first two are just HTML5 and CSS3, the third one uses Javascript to create the bubbles.
-                    </p>
-                    <hr>
-                </div>
-                <div class="col m12 card">
-                        <div class="icons center-align">
-                            <span>
-                                <i class="fab fa-html5 fa-5x"></i>
-                                <i class="fab fa-css3-alt fa-5x"></i>
-                            </span>
-                        </div>
-                        <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="result" data-user="francoisdillinger" data-slug-hash="xLJXQV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Animated Thermometer">
-                                <span>See the Pen <a href="https://codepen.io/francoisdillinger/pen/xLJXQV/">
-                                Animated Thermometer</a> by James Jester (<a href="https://codepen.io/francoisdillinger">@francoisdillinger</a>)
-                                on <a href="https://codepen.io">CodePen</a>.</span>
-                              </p>
-                              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                </div>
-                <div class="col m12 card">
-                        <div class="icons center-align">
-                                <span>
-                                    <i class="fab fa-html5 fa-5x"></i>
-                                    <i class="fab fa-css3-alt fa-5x"></i>
-                                </span>
+                        <div id="triangle"></div>
+                        <div class="title">Portfolio</div>
+                        <div class="icon">
+                                <span class=""><i class="fas fa-laptop-code fa-5x"></i></span>
                             </div>
-                        <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="result" data-user="francoisdillinger" data-slug-hash="OjoBgm" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Partly cloudy animation.">
-                                <span>See the Pen <a href="https://codepen.io/francoisdillinger/pen/OjoBgm/">
-                                Partly cloudy animation.</a> by James Jester (<a href="https://codepen.io/francoisdillinger">@francoisdillinger</a>)
-                                on <a href="https://codepen.io">CodePen</a>.</span>
-                              </p>
-                              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                </div>
-                <div class="col m12 card">
-                        <div class="icons center-align">
-                            <span>
-                                <i class="fab fa-html5 fa-5x"></i>
-                                <i class="fab fa-css3-alt fa-5x"></i>
-                                <i class="fab fa-js fa-5x"></i>
-                            </span>
-                        </div>
-                        <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="result" data-user="francoisdillinger" data-slug-hash="NyxoVq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Bouncing bubbles/Hover effect.">
-                            <span>See the Pen <a href="https://codepen.io/francoisdillinger/pen/NyxoVq/">
-                            Bouncing bubbles/Hover effect.</a> by James Jester (<a href="https://codepen.io/francoisdillinger">@francoisdillinger</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                          </p>
-                          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                        <hr>
+                </div> 
+                <div class="container">
+                        <div class="content portfolio">
+                                <p>
+                                    Here are a few simple animations I've made. The first two are just HTML5 and CSS3, the third one uses Javascript to create the bubbles.
+                                </p>
+                                <!-- <hr> -->
+                            </div>
+                            
+                            <div class="col m12 card">
+                                    <div class="icons center-align">
+                                            <div class="sub-title">HTML5, CSS3</div>
+                                        <!-- <span>
+                                            <i class="fab fa-html5 fa-5x"></i>
+                                            <i class="fab fa-css3-alt fa-5x"></i>
+                                        </span> -->
+                                    </div>
+                                    <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="result" data-user="francoisdillinger" data-slug-hash="xLJXQV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Animated Thermometer">
+                                            <span>See the Pen <a href="https://codepen.io/francoisdillinger/pen/xLJXQV/">
+                                            Animated Thermometer</a> by James Jester (<a href="https://codepen.io/francoisdillinger">@francoisdillinger</a>)
+                                            on <a href="https://codepen.io">CodePen</a>.</span>
+                                          </p>
+                                          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                            </div>
+                            <div class="col m12 card">
+                                    <div class="icons center-align">
+                                            <div class="sub-title">HTML5, CSS3</div>
+                                            <!-- <span>
+                                                <i class="fab fa-html5 fa-5x"></i>
+                                                <i class="fab fa-css3-alt fa-5x"></i>
+                                            </span> -->
+                                        </div>
+                                    <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="result" data-user="francoisdillinger" data-slug-hash="OjoBgm" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Partly cloudy animation.">
+                                            <span>See the Pen <a href="https://codepen.io/francoisdillinger/pen/OjoBgm/">
+                                            Partly cloudy animation.</a> by James Jester (<a href="https://codepen.io/francoisdillinger">@francoisdillinger</a>)
+                                            on <a href="https://codepen.io">CodePen</a>.</span>
+                                          </p>
+                                          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                            </div>
+                            <div class="col m12 card">
+                                    <div class="icons center-align">
+                                        <div class="sub-title">HTML5, CSS3, Javascript</div>
+                                        <!-- <span>
+                                            <i class="fab fa-html5 fa-5x"></i>
+                                            <i class="fab fa-css3-alt fa-5x"></i>
+                                            <i class="fab fa-js fa-5x"></i>
+                                        </span> -->
+                                    </div>
+                                    <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="result" data-user="francoisdillinger" data-slug-hash="NyxoVq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Bouncing bubbles/Hover effect.">
+                                        <span>See the Pen <a href="https://codepen.io/francoisdillinger/pen/NyxoVq/">
+                                        Bouncing bubbles/Hover effect.</a> by James Jester (<a href="https://codepen.io/francoisdillinger">@francoisdillinger</a>)
+                                        on <a href="https://codepen.io">CodePen</a>.</span>
+                                      </p>
+                                      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                            </div>
                 </div>
         </div>
+        <!-- <div class="carousel">
+                <a class="carousel-item" href="#one!"> 
+                    <div class="carousel-fixed-item">
+                            <p class="codepen" data-preview="false" data-height="100%" data-theme-id="dark" data-default-tab="result" data-user="francoisdillinger" data-slug-hash="xLJXQV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Animated Thermometer">
+                                    <span>See the Pen 
+                                        <a href="https://codepen.io/francoisdillinger/pen/xLJXQV/">
+                                            Animated Thermometer</a> by James Jester (<a href="https://codepen.io/francoisdillinger">@francoisdillinger</a>)
+                                            on <a href="https://codepen.io">CodePen</a>.
+                                    </span>
+                                  </p>
+                                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                 
+                  
+                <a class="carousel-item" href="#two!">
+                        <div class="carousel-fixed-item">
+                                <p class="codepen" data-height="100%" data-theme-id="dark" data-default-tab="result" data-user="francoisdillinger" data-slug-hash="xLJXQV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Animated Thermometer">
+                                        <span>See the Pen 
+                                            <a href="https://codepen.io/francoisdillinger/pen/xLJXQV/">
+                                                Animated Thermometer</a> by James Jester (<a href="https://codepen.io/francoisdillinger">@francoisdillinger</a>)
+                                                on <a href="https://codepen.io">CodePen</a>.
+                                        </span>
+                                      </p>
+                                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                </a>
+                <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+              </div> -->
+        <div class="">
+            <div class="header">
+                <div id="triangle"></div>
+                <div class="title">Writings</div>
+                <div class="icon">
+                        <span class=""><i class="fas fa-pencil-alt fa-5x"></i></i></span>
+                    </div>
+                <hr>
+        </div> 
+        <div class="row">
+            <div class="col s12 m10 push-m1 ">
+                <div class=" z-depth-2">      
+                    <div class="content center-align">
+                        <p>
+                            Here are a few examples of my writings. For the moment, the essays provided below will be from my English classes in college. However, as I progress in my academic career I'll begin including essays from my other classes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-list">
+            <div class="row">
+                    <div class="col s12">
+                      <ul class="tabs">
+                        <li class="tab col s3"><a href="#test1">Profile Essay</a></li>
+                        <li class="tab col s3"><a href="#test2">Profile Revision</a></li>
+                        <!-- <li class="tab col s3"><a href="#test4">Test 4</a></li> -->
+                       
+                      </ul>
+                    </div>
+                    <div id="test1" class="col s12 essay">
+                        <div class="col m6">
+                            <div class="content">
+                                <div class="summary">Summary</div>
+                                    <p>
+                                        For this essay, I was asked to conduct an interview of someone and write a profile on an accomplishment of theirs or on a period of their life that I found interesting. Without hesitation, I knew exactly who I’d be calling—Len Parker. Len (not his real name) is a childhood friend of mine who followed his dream of becoming a professional wrestler. No, not in the Olympics, think more along the lines of table-matches, chairs to the face, and other dramatic antics. <br>
+                                        Despite the naysayers, Len went on to attend a wrestling school and made his debut in the ring. That was several years ago, and while he decided not to pursue it as a full-time job, he still wrestles in matches around the country. <br>
+                                        I chose to focus on him for this essay because I’m always impressed by individuals who manage to succeed in chasing their dreams despite what many others may think. I think following those dreams is also a key in finding fulfillment in our lives, and all too often many people give up those dreams in order to focus on something “realistic”. I hope you enjoy reading this piece, and I hope it inspires you, if only a little, to entertain the idea of pursuing something you’ve been putting off in life.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col m6">
+                            <iframe src="https://docs.google.com/document/d/e/2PACX-1vRcjEEKAsmQaBYIv7rE_-jXaKukMP4kXulkYCi0sVMEqQQe5WcrKAmcyYaNTlSwY-zpNVa69IXGtgoL/pub?embedded=true"></iframe>
+                        </div>
+                    </div>
+                    <div id="test2" class="col s12 essay">
+                        <div class="col m6">
+                            <div class="content">
+                                <div class="summary">Summary</div>
+                                    <p>
+                                        I know what you’re thinking, “That first essay was amazing! How could it have possibly been improved?” Well, trust me, nothing in life is perfect—not even my writing. In fact, there were several corrections I needed to make that somehow made it past my editorial “spidey senses”. <br>
+                                        For this revision, I’ve decided to delve a bit deeper into the pros and cons of being an entertainer. More specifically, the things Len loves most about performing in the ring and what concerns or doubts run through his mind in the moments leading up to the start of a match. I found that these individuals are much like everyone else. Yes, I realize that this doesn’t come as a shock to most individuals, but considering the fact that some people tend to thrive in the spotlight, it’s interesting to note that they, too, get nervous like the rest of us. <br>
+                                        After a bit of proofreading and adding a few more details in some areas for clarity, I feel this essay is most definitely an improvement over my initial attempt. I hope you’ll agree, and I hope you enjoy reading it.
+                                            
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col m6">
+                            <iframe src="https://docs.google.com/document/d/e/2PACX-1vSjoBu5CsP4KBwIlRpo5B4tdWFqQP_mFvpstRNVuNdObtSs0g9wXoBTms8D-HbRduMbF0eLEBxqt33y/pub?embedded=true"></iframe>
+                        </div>
+                    </div>
+                  </div>
+        <!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vSjoBu5CsP4KBwIlRpo5B4tdWFqQP_mFvpstRNVuNdObtSs0g9wXoBTms8D-HbRduMbF0eLEBxqt33y/pub?embedded=true"></iframe> -->
+    </div>
+        </div>
         <footer class="page-footer z-depth-2">
-                <div class="container footer-content">
+                <div class=" footer-content">
+                    
                         <div class="row">
-                            <div class="header">
+                            <div class="footer-header">
                                     <span class="title" id="three">Contact Me</span>
                                     <hr>
+                                    <!-- <span class=""><i class="fas fa-laptop-code fa-5x"></i></span> -->
                             </div>
                           <div class="col m12 center-align" id="contact">
                               <ul>
@@ -199,11 +327,14 @@
                       </div>
                       <div class="row footer-copyright center-align">
                         <div class="col m10 offset-m1">
+                        <!-- Disclaimer: These quotes may or may not be real. I'm fairly certain they are fake, but the other voice in my head assures me otherwise. -->
                         </div>
                       </div>
               </footer>
+              <!-- <div class="background"></div> -->
         <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="scripts.js"></script>
         <script src="" async defer></script>
     </body>
 </html>

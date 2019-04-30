@@ -1,3 +1,19 @@
+@font-face{
+    src: url(fonts/SweetHandwrite.ttf);
+    font-family: sweet;
+}
+@font-face{
+    src: url(fonts/SweetHandwrite-Bold.ttf);
+    font-family: bold-sweet;
+}
+@font-face{
+    src: url(fonts/Elmo.ttf);
+    font-family: elmo;
+}
+@font-face{
+    src: url(fonts/ageng\ sans.ttf);
+    font-family: ageng;
+}
 html {
     scroll-behavior: smooth;
   }
@@ -5,24 +21,40 @@ html, body{
     margin: 0px;
     padding: 0px;
 }
+
 body{
     background-color: #fafafa;
 }
 header nav{
     box-shadow: none;
 }
-nav{  
+.navbar-fixed nav{  
     /* height: 100px; */
-    background-color: #005a76;
+    transition-duration: .5s;
+    /* height: 4em; */
+    background-color: #fafafa;
 }
 nav li{
     /* margin: .8em 0 0; */
 
 }
 nav ul a{
-    color: white;
-    font-family: 'Megrim', cursive;
+    transition-duration: .5s;
+    color: #212121;
+    /* font-family: 'Megrim', cursive; */
+    font-family: sweet;
     font-size: 2em;
+}
+.active{
+    transition-duration: .5s;
+    height: 5em;
+    background-color: #212121 !important;
+    /* font-variant-caps: #fafafa; */
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+}
+.links{
+    transition-duration: .5s;
+    color: #fafafa;
 }
 a.btn-small{
     background-color: #00263e;
@@ -46,21 +78,46 @@ a.btn-small:hover{
     margin-top: 1em;
     width: 100%;
     background-size: 100%;
-    background-image: url("images/80.jpg");
+    background-image: url("images/main.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     -webkit-clip-path: polygon(0 20%, 0% 100%, 100% 100%, 100% 20%, 80% 5%, 75% 35%, 60% 0, 40% 0, 25% 35%, 20% 5%);
 }
-div.about-me .row{
+div#background-one{
+    width: 100%;
+    /* height: 500px; */
+    position: relative;
+    z-index: -10;
+    /* content: ''; */
     background-size: 100%;
-    /* background-image: url("images/unsplash.jpg"); */
+    background-image: url("images/main.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    -webkit-clip-path: polygon(0 0, 0 100%, 20% 70%, 0 80%, 20% 20%, 0 40%, 0 0, 100% 0, 100% 40%, 80% 20%, 100% 80%, 80% 70%, 100% 100%, 100% 0);
+    clip-path: polygon(0 0, 0 100%, 20% 70%, 0 80%, 20% 20%, 0 40%, 0 0, 100% 0, 100% 40%, 80% 20%, 100% 80%, 80% 70%, 100% 100%, 100% 0);
 }
+div#content-one{
+    /* position: relative;
+    z-index: 1;
+    background-color: #fafafa */
+}
+div.about-me .container{
+    /* position: absolute; */
+}
+div.about-me .row{
+    /* background-size: 100%;
+    background-image: url("images/80.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
+
+}
+
 img{
     width: 100%;
+    /* filter: grayscale(90%); */
     clip-path: url("#my-shape");
 }
 svg.svg-content{
@@ -77,7 +134,6 @@ div.row{
     margin: 150px 0;
 }
 .our-team{
-    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
     padding: 30px 0 40px;
@@ -92,6 +148,10 @@ div.row{
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
     animation-direction: normal ;
+}
+
+.our-team .pic img{
+    filter: grayscale(60%);
 }
 @keyframes glow{
     0%{
@@ -126,8 +186,8 @@ div.row{
     background: #f5f5f5;
     transition: all 0.9s ease 0s;
     animation-name: none;
-
 }
+
 .our-team .pic{
     display: inline-block;
     width: 130px;
@@ -176,12 +236,14 @@ div.row{
 .our-team:hover .pic img{
     box-shadow: 0 0 0 14px #005a76;
     transform: scale(0.7);
+    filter: grayscale(0%)
 }
 .our-team .team-content{
     margin-bottom: 30px;
 }
 .our-team .title{
-    font-size: 22px;
+    font-family: bold-sweet;
+    font-size: 3em;
     font-weight: 700;
     color: transparent;
     letter-spacing: 1px;
@@ -189,9 +251,10 @@ div.row{
     margin-bottom: 5px;
 }
 .our-team .post{
+    font-family: ageng;
     color: transparent;
     display: block;
-    font-size: 15px;
+    font-size: 1.3em;
     text-transform: capitalize;
 }
 span.post{
@@ -223,8 +286,10 @@ span.post{
     margin-bottom: 1em;
     background: #00263e;
     display: block;
+    font-family: bold-sweet;
+    color: #fafafa;
     /* padding: 10px; */
-    font-size: 17px;
+    font-size: 2em;
     /* color: white; */
     -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
     box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
@@ -232,7 +297,7 @@ span.post{
 }
 .our-team .social li a:hover{
     color: #005a76;
-    background: white;
+    background: #fafafa;
     text-decoration: none;
     /* -webkit-box-shadow: none;
     box-shadow: none; */
@@ -246,7 +311,12 @@ div.container div.title{
     color: #212121;
 }
 hr{
-    width: 75%;
+    /* width: 100%; */
+    height: 4em;
+    background-color: #212121;
+    position: relative;
+    z-index: -10;
+    bottom: 6em;
 }
 .sections{
     margin: 20px 0;
@@ -265,20 +335,56 @@ i.fas.fa-5x{
 } */
 .icon{
     text-align: center;
-    background-color:#212121;
+    /* background-color: #fafafa; */
+    position: absolute;
+    bottom: .5em;
+    z-index: 10;
+    z-index: 10;
+    left: 0;
+    right: 0;
 }
 i.fas:before {
-    color: #005a76;
+    color: #cfd8dc;
+}
+div #triangle{
+    width: 17em;
+    height: 17em;
+    background-color: #005a76;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: .2em;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+    transform: rotate(45deg);
+    /* border-color: #005a76 transparent;
+	border-style: solid;
+	border-width: 20px 20px 0px 20px;
+	height: 0px;
+	width: 0px; */
 }
 div .header{
+    height: 11em;
+    overflow: hidden;
+    position: relative;
     text-align: center;
     margin: .5em;
     /* font-size: 5em; */
-    color: #00263e;
-    font-family: 'Megrim', cursive;
+    color: #cfd8dc;
+    font-family: bold-sweet;
+   
 }
 div.header .title{
     font-size: 5em;
+    position: relative;
+    bottom: .1em;
+    /* background-color: #212121; */
+}
+div.sub-title{
+    font-family: bold-sweet;
+    font-size: 5em;
+    color: #212121
 }
 .row.hobbies{
     /* padding: 1em; */
@@ -287,22 +393,23 @@ div.header .title{
     width: 30%;
 } */
 .content{
-  text-align: left;
-  font-size: 1.2em
+  /* text-align: center */
+  font-size: 1.2em;
+  font-family: ageng;
+  background-color: #fafafa
   /* -webkit-box-shadow: 0px 0px 0px 0px rgba(255,255,255,1); */
 }
-div.icon, div p{
+div p{
     padding: 1em;
 }
 .paragraph{
     padding: 1em;
-    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.4em;
     background-color: #fafafa;
     color: #212121;
 }
 i.fab:before {
-    color: #005a76;
+    color: #fafafa;
 }
 div.portfolio {
     text-align: center;
@@ -310,13 +417,62 @@ div.portfolio {
 div.icons{
     background-color: #fafafa;
 }
-div.icons span i{
+/* div.icons span i{
     margin: .2em;
-    /* margin-bottom:  .2em; */
+    
+} */
+.tab-list{
+    height: 700px;
 }
-footer div.header .title{
-    color: #f5f5f5
+.tabs .tab a {
+    color: #212121;
+    font-family: bold-sweet;
+    font-size: 2em;
+}
+.tabs .tab a:hover{
+    color: #005a76;
+}
+.tabs .tab a.active{
+    color: #fafafa
+}
+.tabs .indicator{
+    background-color: #005a76;
+}
+div.summary{
+    text-align: center;
+    border-bottom: #212121 solid 1px;
+    width: 50%;
+    margin: auto;
+    font-size: 2em;
+    font-family: sweet;
+    padding-top: .5em;
+}
+div.essay{
+    height: 610px;
+}
+div.footer-header{
+    text-align: center;
+    height: 6em;
+}
+footer div.footer-header .title{
+    color: #f5f5f5;
+    font-size: 5em;
+    font-family: bold-sweet;
 }
 footer.page-footer{
     background-color: #212121;
 }
+iframe{
+    width: 100%;
+    height: 600px;
+}
+/* div.carousel{
+    height: 700px;
+} */
+/* .carousel .carousel-item{
+    width: 500px;
+} */
+/* .carousel-codepen{
+    height: 500px;
+    width: 500px;
+} */
