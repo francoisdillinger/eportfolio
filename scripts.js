@@ -19,12 +19,14 @@
             document.getElementById('link-one').className = "links";
             document.getElementById('link-two').className = "links";
             document.getElementById('link-three').className = "links";
+            document.getElementById('link-four').className = "links";
         }
         else{
             document.getElementById('nav').className= "";
             document.getElementById('link-one').className = "";
             document.getElementById('link-two').className = "";
             document.getElementById('link-three').className = "";
+            document.getElementById('link-four').className = "";
         }
     })
 
